@@ -8,8 +8,8 @@
 
 @media (max-width: 695px) {
     .navbar {
-    grid-template-areas: "a";
-    grid-template-columns: 100%;
+        grid-template-areas: "a";
+        grid-template-columns: 100%;
     
     }
    #navlinks {
@@ -65,7 +65,7 @@ ul li{
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 form {
@@ -96,4 +96,82 @@ form {
     border-radius: 10px;
     border-style: solid;
     border-color: black;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    
+}
+
+#first {
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-rows: 3% 10%;
+    grid-template-areas: "image title" 
+                         "image text";    
+    justify-content: center;
+    margin-top: 170px;
+}
+
+#flameicon{
+    grid-area: image;
+    width: 40px;
+    padding-top: 15px;
+    padding-left: 10px;
+
+    margin: auto;
+}
+
+.closertext {
+    margin-top: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#shippingicon {
+    grid-area: image;
+    width: 55px;
+    padding-top: 30px;
+
+    margin: auto;
+}
+
+#second {
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-rows: 3% 10%;
+    grid-template-areas: "image title" 
+                         "image text";    
+    justify-content: center;
+    margin-top: 30px;
+}
+#third {
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-rows: 3% 10%;
+    grid-template-areas: "image title" 
+                         "image text";    
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#diamondicon {
+    grid-area: image;
+    width: 50px;
+    margin: auto;
+    padding-right: 30px;
+}
+
+
+@media (max-width: 676px) {
+    #first, #second, #third {
+        text-align: left;
+    }
+    #flameicon, #shippingicon, #diamondicon {
+        visibility: hidden;
+    }
+    h2 {
+        text-align: center;
+    }
 }
