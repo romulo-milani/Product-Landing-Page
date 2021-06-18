@@ -128,71 +128,35 @@ h2 {
     
 }
 
-#first {
-    display: grid;
-    grid-template-columns: 10% auto;
-    grid-template-rows: 3% 10%;
-    grid-template-areas: "image title" 
-                         "image text";    
+#container-sec {
+    margin-top: 160px;
+}
+
+#first, #second, #third {
+    display: flex;   
+    
+    align-items: center;
     justify-content: center;
-    margin-top: 170px;
 }
 
-#flameicon{
-    grid-area: image;
-    width: 40px;
-    padding-top: 15px;
-    padding-left: 10px;
 
-    margin: auto;
-}
-
-.closertext {
-    margin-top: -10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
-
-#shippingicon {
-    grid-area: image;
-    width: 55px;
-    padding-top: 30px;
-
-    margin: auto;
-}
-
-#second {
-    display: grid;
-    grid-template-columns: 10% auto;
-    grid-template-rows: 3% 10%;
-    grid-template-areas: "image title" 
-                         "image text";    
+.icon {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 30px;
-}
-#third {
-    display: grid;
-    grid-template-columns: 10% auto;
-    grid-template-rows: 3% 10%;
-    grid-template-areas: "image title" 
-                         "image text";    
-    justify-content: center;
-    margin-top: 30px;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    padding: 0;
 }
 
-#diamondicon {
-    grid-area: image;
-    width: 50px;
-    margin: auto;
-    padding-right: 30px;
-}
 
 
 @media (max-width: 676px) {
     #first, #second, #third {
         text-align: left;
     }
-    #flameicon, #shippingicon, #diamondicon {
+    i {
         visibility: hidden;
     }
     h2 {
